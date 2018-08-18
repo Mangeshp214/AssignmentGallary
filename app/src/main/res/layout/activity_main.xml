@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingStart="4dp"
+    android:paddingTop="8dp"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addAssignFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:adjustViewBounds="true"
+        android:fadingEdge="vertical"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/add"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/galleryDrawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/galleryDrawer" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/HeaderTotalCount"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        app:cardBackgroundColor="@color/defaultCounterColor"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/totalCount"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="@string/defaultTotalCount"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/HeaderPendingCount"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:cardBackgroundColor="@color/defaultCounterColor"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeaderTotalCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="@string/pendingCount"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:text="@string/defaultPendingCount"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerCardNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/galleryDrawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeaderPendingCount"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/galleryDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:cardBackgroundColor="@color/galleryDrawerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/title_activity_gallery_drawer"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

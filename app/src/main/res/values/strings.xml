@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Assignment Gallery</string>
+    <string name="headerTotalCount">HeaderTotalCount</string>
+    <string name="headerPendingCount">HeaderPendingCount</string>
+    <string name="totalCount">Total</string>
+    <string name="defaultTotalCount">0</string>
+    <string name="pendingCount">Pending</string>
+    <string name="defaultPendingCount">0</string>
+    <string name="addAssignNameHint">Enter Assignment Name</string>
+    <string name="addAssignSubjectHint">Enter Subject</string>
+    <string name="addAssignDateHint">Select Deadline</string>
+    <string name="updateAssignName">Assignment Name(Non editable)</string>
+    <string name="updateAssignSubjectHint">Update Subject</string>
+    <string name="updateAssignDateHint">Update Deadline</string>
+
+    <string name="addAssignButton">SAVE</string>
+    <string name="updateAssignButton">UPDATE</string>
+    <string name="searchBarHint">Search for assignment name</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="assign_list_empty_feedback">No assignments here :)</string>
+
+    <string name="overdue_count_text_1">You have </string>
+    <string name="overdue_count_text_2">overdue assignment</string>
+    <string name="overdue_default_count">0</string>
+
+    <!-- TODO : Add or change titles of all activities here -->
+    <string name="title_activity_overdue">Overdue</string>
+    <string name="title_activity_main2">Assignment Gallery</string>
+    <string name="title_activity_gallery_drawer">Gallery Drawer</string>
+    <string name="title_activity_add_assign">Add Assignment</string>
+    <string name="title_activity_update_assign">Update Assignment</string>
+</resources>
